@@ -8,13 +8,13 @@
 
 ## 1. Credenciales en n8n: las 3 conexiones activas
 
-![Credenciales de n8n: Gmail, Slack y HubSpot](./img/credenciales_n8n.png)
+![Credenciales de n8n: Gmail, Slack y HubSpot](./credenciales_n8n.png)
 
 | Herramienta (rol en el caso) | Credencial en n8n | Autenticación | Estado |
 |---|---|---|---|
-| **Gmail** · casilla de soporte | `Kairos · Gmail OAuth2 (casilla de soporte)` | OAuth2 (Google) | ![Gmail conectado](./img/cred_gmail.png) |
-| **Slack** · canal `#kairos-operaciones` | `Kairos · Slack OAuth2 (bot, chat:write + channels:read)` | OAuth2 (Slack, flujo `oauth/v2/authorize` → `oauth.v2.access`) | ![Slack conectado](./img/cred_slack.png) |
-| **HubSpot** · CRM de la tienda | `Kairos · HubSpot CRM (Service Key, solo contactos)` | Service Key de HubSpot | ![HubSpot conectado](./img/cred_hubspot.png) |
+| **Gmail** · casilla de soporte | `Kairos · Gmail OAuth2 (casilla de soporte)` | OAuth2 (Google) | ![Gmail conectado](./cred_gmail.png) |
+| **Slack** · canal `#kairos-operaciones` | `Kairos · Slack OAuth2 (bot, chat:write + channels:read)` | OAuth2 (Slack, flujo `oauth/v2/authorize` → `oauth.v2.access`) | ![Slack conectado](./cred_slack.png) |
+| **HubSpot** · CRM de la tienda | `Kairos · HubSpot CRM (Service Key, solo contactos)` | Service Key de HubSpot | ![HubSpot conectado](./cred_hubspot.png) |
 
 **Notas sobre la autenticación**
 - **HubSpot:** desde junio de 2026 HubSpot ya no permite crear las "legacy public apps", que eran las que usaba el OAuth2 del nodo de n8n en instalaciones propias. El método recomendado hoy para integraciones de una sola cuenta es la **Service Key**, creada con permisos acotados (ver tabla de mínimo privilegio). El nodo usado es el conector nativo de HubSpot.
@@ -36,11 +36,11 @@
 
 **Entrada:** casilla de soporte, IF anti auto-reply y Set de limpieza.
 
-![Entrada por Gmail](./img/flujo_entrada.png)
+![Entrada por Gmail](./flujo_entrada.png)
 
 **Salidas:** Look up en HubSpot, Create Draft y Set mínimo antes de Slack.
 
-![Salidas a HubSpot, Gmail y Slack](./img/flujo_salidas.png)
+![Salidas a HubSpot, Gmail y Slack](./flujo_salidas.png)
 
 ```
 [Gmail Trigger · Casilla de soporte]
