@@ -1,7 +1,7 @@
 # Checkpoint 4 · Integraciones avanzadas e interconexión de sistemas
 
-**Alumno:** Alfredo Argañaraz · Coderhouse, AI Automation Avanzado · Cohorte 2026
-**Archivo del workflow:** [`checkpoint4_alfredo_arganaraz.json`](./checkpoint4_alfredo_arganaraz.json)
+**Alumno:** Alfredo Argañaraz · Coderhouse, AI Automation Avanzado · Cohorte 2026  
+**Archivo del workflow:** [`checkpoint4_alfredo_arganaraz.json`](./checkpoint4_alfredo_arganaraz.json)  
 **Caso:** Kairos Salud Laboral (empresa ficticia de salud corporativa, Argentina y México). El workflow parte del Manager del Módulo 3 (router multiagente + memoria persistente por Session_ID) y lo conecta con la casilla de soporte (Gmail), el CRM (HubSpot) y el canal del equipo de operaciones (Slack).
 
 ---
